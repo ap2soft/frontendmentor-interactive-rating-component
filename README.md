@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7627a59-7491-45eb-b587-c08b732db260/deploy-status)](https://app.netlify.com/sites/frontendmentor-interactive-rating-component/deploys)
+
 # Frontend Mentor - Interactive rating component solution
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -36,8 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [frontendmentor-interactive-rating-component.netlify.app](https://frontendmentor-interactive-rating-component.netlify.app/)
 
 ### Developing
 
@@ -70,6 +71,7 @@ npm run build
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
 - [Alpine.js](https://alpinejs.dev/) - New, lightweight, JavaScript framework.
 - [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling (to build the project)
+- [Netlify](https://netlify.com) - Webiste deployment
 
 ### What I learned
 
