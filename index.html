@@ -1,56 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/favicon.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
-</head>
+  <body class="bg-dark-blue font-serif text-gray">
+    <div
+      id="app"
+      class="grid h-screen place-content-center p-6"
+      x-data="rating"
+    >
+      <template x-if="!rated">
+        <div
+          class="max-w-sm rounded-lg bg-blue p-6 desktop:rounded-3xl desktop:p-8"
+        >
+          <div class="inline-block rounded-full bg-gray/10 p-3">
+            <img src="./images/icon-star.svg" alt="Icon Star" />
+          </div>
 
-<body>
-    <div id="app"
-        class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100">
+          <h1 class="mt-2 text-2xl font-bold text-white">How did we do?</h1>
 
-        <!-- Rating state start -->
-        How did we do?
+          <p class="mt-4 text-sm">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
 
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
+          <div class="mt-6 grid grid-cols-5 gap-3">
+            <template x-for="rate in rates" :key="rate">
+              <button
+                class="grid h-12 w-12 shrink-0 place-content-center rounded-full bg-gray/10 font-bold transition hover:bg-orange hover:text-white"
+                :class="{'bg-light-gray text-white': currentRate === rate}"
+                x-text="rate"
+                @click="currentRate = rate"
+              ></button>
+            </template>
+          </div>
 
-        1 2 3 4 5
-
-        Submit
-        <!-- Rating state end -->
-
-        <!-- Thank you state start -->
-        You selected
-        <!-- Add rating here --> out of 5
-        Thank you!
-
-        We appreciate you taking the time to give a rating. If you ever need more support,
-        don't hesitate to get in touch!
-        <!-- Thank you state end -->
-
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
+          <button
+            class="mt-6 w-full rounded-full bg-orange py-3 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-white hover:text-orange"
+            @click="submit"
+          >
+            Submit
+          </button>
         </div>
+      </template>
+
+      <template x-if="rated">
+        <div
+          class="max-w-sm rounded-lg bg-blue px-6 py-10 desktop:rounded-3xl desktop:px-8 desktop:py-12"
+        >
+          <div class="mx-auto w-fit">
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt="Thank You Icon"
+            />
+          </div>
+
+          <div
+            class="mx-auto mt-6 w-fit rounded-full bg-gray/10 px-6 py-2 text-sm text-orange"
+          >
+            You selected <span x-text="currentRate"></span> out of 5
+          </div>
+          <h1 class="mt-8 text-center text-2xl font-bold text-white">
+            Thank you!
+          </h1>
+          <p class="mt-4 text-center text-sm">
+            We appreciate you taking the time to give a rating.
+            <br class="hidden desktop:inline" />
+            If you ever need more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </template>
+
+      <div class="absolute inset-x-0 bottom-0 p-2 text-center text-sm">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-[#3E52A3]"
+        >
+          Frontend Mentor </a
+        >. Coded by <a href="https://ap2.dev" class="text-[#3E52A3]">Andrew</a>.
+      </div>
     </div>
 
     <script type="module" src="./src/main.js"></script>
-</body>
-
+  </body>
 </html>
