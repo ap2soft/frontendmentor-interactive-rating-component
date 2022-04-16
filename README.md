@@ -1,35 +1,55 @@
-# template-vite-js-tailwind-v3
+# Frontend Mentor - Interactive rating component solution
 
-- **template of:** vite + vanilaJS
-- **tailwindcss:** v3.x
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Started
+## Table of contents
 
-```bash
-yarn
-# or `npm install`
-```
+- [Frontend Mentor - Interactive rating component solution](#frontend-mentor---interactive-rating-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+  - [Author](#author)
 
----
+## Overview
 
-## Develop
+### The challenge
 
-```bash
-yarn dev
-# or `npm run dev`
-```
+Users should be able to:
 
----
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
 
-## Build
+### Screenshot
 
-```bash
-yarn build
-# or `npm run build`
-```
+![](./screenshot.png)
 
----
+### Links
 
-<p align="center">
-<img src="./powered-by-vitawind-bright.png">
-</p>
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- CSS Grid
+- Mobile-first workflow
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [Alpine.js](https://alpinejs.dev/) - New, lightweight, JavaScript framework.
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling (to build the project)
+
+### What I learned
+
+I learned how to build a website using Vite, Tailwind CSS and Alpine.js
+
+## Author
+
+- Website - [Andrew](https://ap2.dev)
+- Twitter - [@andreich1980](https://www.twitter.com/andreich1980)
