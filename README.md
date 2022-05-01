@@ -38,6 +38,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-solution-using-tailwind-css-alpinejs-BkqhxodEc](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-using-tailwind-css-alpinejs-BkqhxodEc)
 - Live Site URL: [frontendmentor-interactive-rating-component.netlify.app](https://frontendmentor-interactive-rating-component.netlify.app/)
 
 ### Developing
